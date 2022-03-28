@@ -1,4 +1,5 @@
 import { useEffect, useState, useContext } from "react";
+import { MdOutlineNavigateNext, MdNavigateBefore } from "react-icons/md";
 import MovieList from "../components/MovieList";
 import {
   Button,
@@ -72,10 +73,14 @@ const Popular = () => {
 
       <ButtonContainer>
         <Button onClick={prevPageHandler}>
-          <span>Prev</span>
+          <span>
+            <MdNavigateBefore style={{ color: "wheat" }} /> Prev
+          </span>
         </Button>
         <Button onClick={nextPageHandler}>
-          <span>Next</span>
+          <span>
+            Next <MdOutlineNavigateNext style={{ color: "wheat" }} />{" "}
+          </span>
         </Button>
       </ButtonContainer>
     </div>
