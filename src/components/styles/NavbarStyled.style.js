@@ -17,8 +17,13 @@ export const NavbarStyled = styled.nav`
   }
 
   @media screen and (max-width: 700px) {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    img {
+      margin: 0 15px;
+    }
   }
 `;
