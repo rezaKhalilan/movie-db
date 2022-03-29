@@ -24,6 +24,7 @@ const Popular = () => {
     fetchMovies(API).then((movies) => {
       setPopular(movies.results);
       setFiltered(movies.results);
+      console.log(filtered);
     });
   }, [page]);
 

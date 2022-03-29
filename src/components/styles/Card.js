@@ -4,7 +4,7 @@ export const Card = Styled.div`
   background-color: ${({ theme }) => theme.colors.lightDark};
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  width: 80%;
+  width: 90%;
   margin: 1rem auto;
   color:  ${({ theme }) => theme.colors.white};
 

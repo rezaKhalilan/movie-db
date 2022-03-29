@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavbarStyled = styled.nav`
   width: 100%;
   height: 5%;
-  padding: 0 20%;
+  padding: 0 10%;
   background: ${({ theme }) => theme.colors.dark};
   text-align: center;
   display: flex;
@@ -23,7 +23,8 @@ export const NavbarStyled = styled.nav`
     justify-content: space-between;
 
     img {
-      margin: 0 15px;
+      margin-left: 8px;
+      margin-right: 8px;
     }
   }
 `;

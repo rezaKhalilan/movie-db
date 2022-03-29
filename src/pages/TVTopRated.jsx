@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import MovieList from "../components/MovieList";
+import TvList from "../components/TvList";
 import { MdOutlineNavigateNext, MdNavigateBefore } from "react-icons/md";
 
 import {
@@ -73,7 +73,7 @@ const TVTopRated = () => {
         </FilteredButton>
       </ButtonContainer>
 
-      <MovieList movies={filtered} />
+      <TvList tv={filtered} />
 
       <ButtonContainer>
         <Button onClick={prevPageHandler}>

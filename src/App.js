@@ -7,12 +7,14 @@ import UpComing from "./pages/UpComing";
 import TVPopular from "./pages/TVPopular";
 import TVOnTheAir from "./pages/TVOnTheAir";
 import TVTopRated from "./pages/TVTopRated";
+import DetailPage from "./components/DetailPage";
 //router
 import { Route, Routes } from "react-router-dom";
 //styled components
 import { ThemeProvider } from "styled-components";
 import { theme } from "./ui/theme";
 import GlobalStyles from "./ui/Global";
+import TVDetailPage from "./components/TVDetailPage";
 
 function App() {
   //first loaded content
@@ -35,6 +37,8 @@ function App() {
           <Route path="/tv-toprated" element={<TVTopRated />} />
           <Route path="/tv-popular" element={<TVPopular />} />
           <Route path="/tv-on-air" element={<TVOnTheAir />} />
+          <Route path="/detail-page/:id" element={<DetailPage />} />
+          <Route path="/detail-page-tv/:id" element={<TVDetailPage />} />
         </Routes>
       </Layout>
     </ThemeProvider>
